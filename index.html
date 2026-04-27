@@ -3,17 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Elite algorithmic copy trading specializing exclusively in Gold (XAU/USD). The Element of Wealth, Mastered.">
+    <meta name="description" content="Elite algorithmic copy trading specializing exclusively in Gold (XAU/USD). The Element of Wealth, Mastered with GTC Gold.">
+    <meta name="keywords" content="Gold Trading, XAU/USD, Copy Trading, Algorithmic Trading, GTC Gold, Forex, Automated Trading">
+    <meta name="author" content="GTC Gold">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gtcgold.website/">
+    <meta property="og:title" content="GTC Gold | Elite XAU/USD Copy Trading">
+    <meta property="og:description" content="Elite algorithmic copy trading specializing exclusively in Gold (XAU/USD).">
+    <meta property="og:image" content="/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gtcgold.website/">
+    <meta property="twitter:title" content="GTC Gold | Elite XAU/USD Copy Trading">
+    <meta property="twitter:description" content="Elite algorithmic copy trading specializing exclusively in Gold (XAU/USD).">
+    <meta property="twitter:image" content="/og-image.jpg">
+
+    <link rel="icon" type="image/png" href="/favicon.png">
     <title>GTC Gold | Elite XAU/USD Copy Trading</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">GTC <span>GOLD</span></a>
+            <div class="nav-links">
+                <a href="#how-it-works" class="nav-link smooth-scroll">How It Works</a>
+                <a href="#performance" class="nav-link smooth-scroll">Performance</a>
+                <a href="#faq" class="nav-link smooth-scroll">FAQ</a>
+                <a href="#how-it-works" class="btn btn-nav smooth-scroll">Get Started</a>
+            </div>
+            <div class="mobile-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <!-- Hero Section -->
@@ -49,32 +84,49 @@
         </section>
 
         <!-- Live Performance Stats -->
-        <section class="performance-stats fade-in-section">
+        <section id="performance" class="performance-stats fade-in-section">
             <h2 class="section-title">Live Performance</h2>
-            <div class="iframe-container" style="text-align: center; max-width: 1000px; margin: 0 auto; overflow: hidden; border-radius: 8px; border: 1px solid rgba(210, 159, 81, 0.2);">
-                <iframe src="https://ratings.gtccopy.com/widgets/ratings/5588?widgetKey=social_platform_ratings&lang=en&preview=P3U9ZmJhMDc2JmE9NTMyMiZwPTU1ODgmdz0x" width="100%" height="450" frameborder="0" style="background: transparent;"></iframe>
+            <div class="performance-dashboard">
+                <div class="metrics-grid">
+                    <div class="metric-card main-metric">
+                        <span class="metric-label">Total Return</span>
+                        <div class="metric-value-container">
+                            <span class="metric-value" id="return-total">--</span>
+                            <span class="metric-unit">%</span>
+                        </div>
+                        <div class="metric-progress-bar">
+                            <div class="progress-fill" id="return-total-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Daily Return</span>
+                        <div class="metric-value-container">
+                            <span class="metric-value" id="return-day">--</span>
+                            <span class="metric-unit">%</span>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Max Drawdown</span>
+                        <div class="metric-value-container danger">
+                            <span class="metric-value" id="max-drawdown">--</span>
+                            <span class="metric-unit">%</span>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Max Profit</span>
+                        <div class="metric-value-container success">
+                            <span class="metric-value" id="max-profit">--</span>
+                            <span class="metric-unit">%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-footer">
+                    <span class="last-updated">Real-time data from GTC Copy Portal</span>
+                    <a href="https://ratings.gtccopy.com/widgets/ratings/5588?widgetKey=social_platform_ratings&lang=en&preview=P3U9ZmJhMDc2JmE9NTMyMiZwPTU1ODgmdz0x" target="_blank" class="view-source-btn">View Detailed Report</a>
+                </div>
             </div>
         </section>
-        <!-- The Strategy (Catalog Section) -->
-        <section class="strategy fade-in-section">
-            <h2 class="section-title">The Strategy</h2>
-            <div class="strategy-grid">
-                <div class="card">
-                    <h3>Long & Short Execution</h3>
-                    <p>Capturing momentum in both directions with sophisticated directional algorithms.</p>
-                </div>
-                <div class="card">
-                    <h3>Single-Asset Focus (Gold)</h3>
-                    <p>Deep market specialization on XAU/USD for refined historical pattern recognition.</p>
-                </div>
-                <div class="card">
-                    <h3>Automated Risk Management</h3>
-                    <p>Dynamic position sizing and strict drawdown limits to protect capital.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Core Values Section -->
+        <!-- Live Performance Stats -->
         <section class="core-values fade-in-section">
             <h2 class="section-title">Core Values</h2>
             <div class="values-columns">
@@ -100,7 +152,7 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="faq-section fade-in-section">
+        <section id="faq" class="faq-section fade-in-section">
             <h2 class="section-title">Frequently Asked Questions</h2>
             <div class="faq-container">
                 <details class="faq-item">
@@ -129,22 +181,35 @@
                 </details>
             </div>
         </section>
+
     </main>
 
     <!-- Footer / Final Call to Action -->
     <footer class="fade-in-section">
         <div class="footer-content">
+            <div class="footer-logo">GTC <span>GOLD</span></div>
             <p>Connect your GTC account and mirror our exact positions.</p>
-            <a href="#how-it-works" class="btn btn-solid smooth-scroll">Start Copying GTC Gold</a>
+            <div class="footer-links">
+                <a href="#how-it-works" class="smooth-scroll">How It Works</a>
+                <a href="#performance" class="smooth-scroll">Performance</a>
+                <a href="#faq" class="smooth-scroll">FAQ</a>
+            </div>
             
             <div class="socials">
                 <a href="#" aria-label="Instagram">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                 </a>
             </div>
+
+            <div class="risk-disclosure">
+                <p><strong>Risk Disclosure:</strong> Trading gold (XAU/USD) involves significant risk of loss and is not suitable for all investors. Past performance is not indicative of future results. Automated trading and copy trading carry unique risks, including potential technical failures. Ensure you fully understand the risks before committing capital.</p>
+            </div>
+            <div class="copyright">
+                &copy; 2026 GTC Gold. All rights reserved.
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
