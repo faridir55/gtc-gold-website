@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateMetric('return-total', profileData.returnAllTime);
             updateMetric('return-day', profileData.returnDay);
             updateMetric('max-drawdown', indicatorsData.maxDrawdown);
-            updateMetric('max-profit', indicatorsData.maxProfit);
+            updateMetric('return-month', profileData.returnMonth);
 
             // Update progress fill
             const totalReturn = parseFloat(profileData.returnAllTime);
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateMetric('return-total', '26.22');
             updateMetric('return-day', '4.26');
             updateMetric('max-drawdown', '13.02');
-            updateMetric('max-profit', '37.55');
+            updateMetric('return-month', '14.46');
         }
     }
 
