@@ -23,11 +23,28 @@ export default function Footer() {
             href="https://wa.me/+15019144353"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-[#25D366]/40 rounded-full text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all duration-300"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-[#25D366]/40 rounded-full text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all duration-300 mb-6"
           >
             <MessageCircle size={20} />
             <span className="font-medium">WhatsApp Us</span>
           </a>
+
+          {/* Language Switcher */}
+          <div className="flex items-center gap-4 text-xs tracking-widest uppercase">
+            <a
+              href="https://tr.magicfx.pro"
+              className="font-medium text-text-muted hover:text-text-color transition-colors duration-300 border-b border-transparent hover:border-text-muted/40 pb-0.5"
+            >
+              Türkçe (TR)
+            </a>
+            <span className="text-text-muted/20">|</span>
+            <a
+              href="https://magicfx.pro"
+              className="font-semibold text-accent-color transition-colors duration-300 border-b border-accent-color pb-0.5"
+            >
+              English (EN)
+            </a>
+          </div>
         </div>
 
         <div className="border-t border-white/5 pt-10 mt-10">
