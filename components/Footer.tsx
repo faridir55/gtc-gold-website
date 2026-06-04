@@ -44,6 +44,13 @@ export default function Footer() {
             >
               English (EN)
             </a>
+            <span className="text-text-muted/20">|</span>
+            <a
+              href="https://fa.magicfx.pro"
+              className="font-medium text-text-muted hover:text-text-color transition-colors duration-300 border-b border-transparent hover:border-text-muted/40 pb-0.5"
+            >
+              Farsi (FA)
+            </a>
           </div>
         </div>
 
